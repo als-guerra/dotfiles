@@ -1,0 +1,71 @@
+[user]
+	name = 
+	username = 
+	email = 
+	signingkey = 
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[init]
+	defaultBranch = main
+
+[apply]
+ 	whitespace = fix
+
+[pull]
+	rebase = false
+
+[commit]
+	gpgsign = true
+
+[tag]
+	forceSignAnnotated = true
+
+[help]
+  autocorrect = 1
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = green
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[merge]
+	ff = only
+	log = true
+
+[fetch]
+	prune = true
+
+[diff]
+	colorMoved = zebra
+	renames = copies
+
+[push]
+ 	default = simple
+
+[alias]
+	cm = commit -m --no-edit
+	lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
+	st = status -sb
+	ps = push
