@@ -1,0 +1,30 @@
+# Systemd
+alias start='sudo systemctl start'
+alias stop='sudo systemctl stop'
+alias disable='sudo systemctl disable'
+alias enable='sudo systemctl enable'
+
+# Pacman
+alias install='sudo pacman -S --noconfirm'
+alias uninstall='sudo pacman -R --noconfirm'
+alias update='sudo pacman -Syy --color auto'
+alias upgrade='sudo pacman -Syyuu --noconfirm --color auto'
+alias search='sudo pacman -Ss --color auto'
+
+# Font
+alias font-reload='sudo fc-cache -fv'
+
+# Free
+alias free='free -mt'
+alias ram='free -h'
+
+# Continue Download
+alias wget='wget -c'
+
+# Pacman Unlock
+alias unlock='sudo rm /var/lib/pacman/db.lck'
+alias rmpacmanlock='sudo rm /var/lib/pacman/db.lck'
+
+# List
+alias ls='ls --color=auto'
+alias la='ls -a'
