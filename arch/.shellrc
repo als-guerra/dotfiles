@@ -65,6 +65,10 @@ source "/etc/profile.d/rvm.sh"
 # Anaconda
 export PATH="/home/guerra/anaconda3/bin:$PATH"
 
-# Deno.js
-
 # Bun.js
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# Deno.js
+export DENO_INSTALL="/home/guerra/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
