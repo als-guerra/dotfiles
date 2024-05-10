@@ -72,3 +72,6 @@ export PATH=$BUN_INSTALL/bin:$PATH
 # Deno.js
 export DENO_INSTALL="/home/guerra/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+# Load Angular CLI autocompletion.
+# source <(ng completion script)
