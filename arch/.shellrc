@@ -57,7 +57,11 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # rvm
-source "/etc/profile.d/rvm.sh"
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# ruby on rails
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
 
 # cargo
 . "$HOME/.cargo/env"
